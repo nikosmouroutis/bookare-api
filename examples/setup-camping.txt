@@ -1,0 +1,83 @@
+BOOKARE SETUP
+{
+  "type": "camping",
+  "name": "Example Camping",
+  "city": "Σιθωνία",
+  "country": "GR",
+  "language": "el",
+  "phone": "+30 210 000 0000",
+  "email": "hello@example.com",
+  "website": "https://example.com",
+  "owner": {
+    "name": "Alex Example",
+    "email": "owner@example.com"
+  },
+  "opening_hours": [
+    "Daily 08:00–22:00"
+  ],
+  "booking_rules": {
+    "days_ahead": 365
+  },
+  "units": [
+    {
+      "name": "Θέση για σκηνή/τροχόσπιτο",
+      "kind": "pitch",
+      "count": 60,
+      "guests": 4,
+      "price_per_night": 28,
+      "min_nights": 1,
+      "description": ""
+    },
+    {
+      "name": "Caravan",
+      "kind": "caravan",
+      "count": 6,
+      "guests": 4,
+      "price_per_night": 55,
+      "min_nights": 1,
+      "description": ""
+    },
+    {
+      "name": "Ξύλινο μπανγκαλόου",
+      "kind": "home",
+      "count": 4,
+      "guests": 5,
+      "price_per_night": 85,
+      "min_nights": 2,
+      "description": ""
+    }
+  ],
+  "seasons": [
+    {
+      "name": "Υψηλή σεζόν",
+      "from": "2027-07-15",
+      "to": "2027-08-25",
+      "price_per_night": 38,
+      "unit": "Θέση για σκηνή/τροχόσπιτο"
+    },
+    {
+      "name": "Υψηλή σεζόν",
+      "from": "2027-07-15",
+      "to": "2027-08-25",
+      "price_per_night": 75,
+      "unit": "Caravan"
+    },
+    {
+      "name": "Υψηλή σεζόν",
+      "from": "2027-07-15",
+      "to": "2027-08-25",
+      "price_per_night": 110,
+      "unit": "Ξύλινο μπανγκαλόου"
+    }
+  ],
+  "stay_rules": {
+    "check_in_from": "14:00",
+    "check_out_by": "12:00",
+    "cancel_days_before": 7
+  },
+  "about": "Ανοιχτά από 15 Μαΐου έως 30 Σεπτεμβρίου.",
+  "open_season": {
+    "from": "05-15",
+    "to": "09-30"
+  }
+}

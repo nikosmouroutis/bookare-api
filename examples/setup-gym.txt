@@ -1,0 +1,105 @@
+BOOKARE SETUP
+{
+  "type": "gym",
+  "name": "Example Pilates Studio",
+  "city": "Καλαμαριά",
+  "country": "GR",
+  "language": "el",
+  "phone": "+30 210 000 0000",
+  "email": "hello@example.com",
+  "website": "https://example.com",
+  "owner": {
+    "name": "Alex Example",
+    "email": "owner@example.com"
+  },
+  "opening_hours": [
+    "Mon–Fri 09:00–20:30"
+  ],
+  "classes": [
+    {
+      "name": "Reformer Pilates",
+      "spots": 5,
+      "times": [
+        {
+          "days": [
+            "mon",
+            "wed",
+            "fri"
+          ],
+          "time": "09:00",
+          "minutes": 50,
+          "instructor": "Κατερίνα"
+        },
+        {
+          "days": [
+            "mon",
+            "wed",
+            "fri"
+          ],
+          "time": "18:00",
+          "minutes": 50,
+          "instructor": "Κατερίνα"
+        },
+        {
+          "days": [
+            "mon",
+            "wed",
+            "fri"
+          ],
+          "time": "19:00",
+          "minutes": 50,
+          "instructor": "Γιώργος"
+        }
+      ]
+    },
+    {
+      "name": "Mat Pilates",
+      "spots": 10,
+      "times": [
+        {
+          "days": [
+            "tue",
+            "thu"
+          ],
+          "time": "18:30",
+          "minutes": 50,
+          "instructor": "Γιώργος"
+        }
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "name": "1 μάθημα",
+      "classes": 1,
+      "unlimited": false,
+      "valid_days": 30,
+      "price": 18
+    },
+    {
+      "name": "4 μαθήματα",
+      "classes": 4,
+      "unlimited": false,
+      "valid_days": 30,
+      "price": 64
+    },
+    {
+      "name": "8 μαθήματα",
+      "classes": 8,
+      "unlimited": false,
+      "valid_days": 45,
+      "price": 112
+    },
+    {
+      "name": "12 μαθήματα",
+      "classes": 12,
+      "unlimited": false,
+      "valid_days": 60,
+      "price": 156
+    }
+  ],
+  "booking_rules": {
+    "days_ahead": 14,
+    "cancel_hours_before": 12
+  }
+}

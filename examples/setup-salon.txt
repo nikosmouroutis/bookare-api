@@ -1,0 +1,105 @@
+BOOKARE SETUP
+{
+  "type": "salon",
+  "name": "Example Barbers",
+  "city": "Lisbon",
+  "street": "Example Street 1",
+  "country": "PT",
+  "language": "en",
+  "phone": "+30 210 000 0000",
+  "email": "hello@example.com",
+  "website": "https://example.com",
+  "owner": {
+    "name": "Alex Example",
+    "email": "owner@example.com"
+  },
+  "opening_hours": [
+    "Tue–Fri 10:00–20:00",
+    "Sat 10:00–18:00"
+  ],
+  "booking_rules": {
+    "days_ahead": 30,
+    "cancel_hours_before": 4
+  },
+  "services": [
+    {
+      "name": "Haircut",
+      "minutes": 30,
+      "price": 18,
+      "staff": [
+        "Rui",
+        "Tiago",
+        "André"
+      ]
+    },
+    {
+      "name": "Beard trim",
+      "minutes": 20,
+      "price": 12,
+      "staff": [
+        "Rui",
+        "Tiago"
+      ]
+    },
+    {
+      "name": "Haircut + beard",
+      "minutes": 50,
+      "price": 27,
+      "staff": [
+        "Rui",
+        "Tiago"
+      ]
+    },
+    {
+      "name": "Kids cut",
+      "minutes": 20,
+      "price": 12,
+      "staff": [
+        "Rui",
+        "Tiago",
+        "André"
+      ]
+    }
+  ],
+  "staff": [
+    "Rui",
+    "Tiago",
+    "André"
+  ],
+  "booking_hours": [
+    {
+      "days": [
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "from": "10:00",
+      "to": "14:00"
+    },
+    {
+      "days": [
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "from": "15:00",
+      "to": "20:00"
+    },
+    {
+      "days": [
+        "sat"
+      ],
+      "from": "10:00",
+      "to": "14:00"
+    },
+    {
+      "days": [
+        "sat"
+      ],
+      "from": "15:00",
+      "to": "18:00"
+    }
+  ]
+}
