@@ -34,8 +34,7 @@ Connect any MCP client to `https://bookare.app/mcp` (Streamable HTTP, stateless,
 | `check_address` | Is `name.bookare.app` free? Suggests alternatives |
 | `get_plans` | Plans and prices for a country, the free trial, no commission |
 | `create_venue` | Creates a **draft** venue for the owner; returns its booking page, an `access_key` and a `claim_link` |
-| `list_venue_tools` | The tools of that venue, with their full input schemas |
-| `call_venue_tool` | Runs one of them with the `access_key` |
+| 56 setup tools | `list_templates`, `setup_from_template`, `update_venue`, `set_branding`, `create_pack`, `add_weekly_class`, `add_service`, `add_table`, `create_unit`, `add_season`, `get_embed_code`, `get_claim_link`, imports and more — each takes the venue’s `address` and `access_key` plus its own inputs |
 
 Typical flow: `check_address` → `create_venue` → `setup_from_template` (pilates, yoga, crossfit, martial_arts, dance,
 boutique_gym, hair_salon, barber, beauty, personal_trainer, tutor, restaurant, bar, small_hotel, holiday_home, campsite,
