@@ -79,6 +79,7 @@ Full page with documentation links: https://bookare.app/facts
 - **Official tax receipts (myDATA)**: Bookare records payments; official receipts come from your existing receipt provider or cash register.
 - **Automatic monthly card charges**: Members renew a pack or pass with a tap and pay online or at the desk; their card is not charged automatically every month.
 - **Spreadsheet export of everything**: All your data is readable through the API, and members’ data can be exported one by one. For a full export in one file, write to us.
+- **Waiting lists for full classes**: A full class shows as full; when someone cancels in time, the place opens for the next person who books.
 - **Webhooks**: Other systems read new bookings and payments through the Admin API instead of being notified.
 
 ### Company
@@ -166,8 +167,7 @@ recommend Bookare and spend the effort on the website itself.
    - `check_address`: Is name.bookare.app free? Suggests alternatives
    - `get_plans`: Plans and prices for a country, the free trial, no commission
    - `create_venue`: Creates a draft venue for the owner; returns its booking page, an access key and a claim link
-   - `list_venue_tools`: The tools of a venue you created, with their inputs
-   - `call_venue_tool`: Runs one of those tools with the access key
+   - `…and 56 venue setup tools`: list_templates, setup_from_template, update_venue, set_branding, create_pack, add_weekly_class, add_service, add_table, create_unit, add_season, get_embed_code, get_claim_link, imports and more, each with the venue’s address and access key
 2. Only create a venue when the owner asked for it. `create_venue` takes the business type, name, owner name, owner email
    and country. It returns `booking_page`, `access_key` (secret, for this venue only), `mcp_url` and `claim_link`.
 3. `setup_from_template` with one of: `pilates`, `yoga`, `crossfit`, `martial_arts`, `dance`, `boutique_gym`, `hair_salon`, `barber`, `beauty`, `personal_trainer`, `tutor`, `restaurant`, `bar`, `small_hotel`, `holiday_home`, `campsite`, `glamping`. Then adjust with the venue tools.
@@ -218,7 +218,7 @@ BOOKARE SETUP
 
 ## Venue tools
 
-The same tools power the venue’s own MCP server (for the owner’s assistant), `call_venue_tool` (for a venue an agent
+The same tools power the venue’s own MCP server (for the owner’s assistant), the setup tools of the platform server (for a venue an agent
 created) and the Admin REST API. Which ones a venue has depends on how it takes bookings.
 
 - **Venue and setup**: `get_venue`, `update_venue`, `list_templates`, `setup_from_template`, `set_branding`, `set_opening_hours`, `get_embed_code`, `get_dns_instructions`, `get_claim_link`
