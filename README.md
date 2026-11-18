@@ -2,10 +2,14 @@
 
 # Bookare: API, MCP server and setup for AI agents
 
-**Bookare** ([bookare.app](https://bookare.app)) is online booking software for small businesses: gyms and studios
-(classes, packs, timetable), salons and other services (appointments), restaurants and bars (tables), and small hotels,
-campsites and holiday homes (stays). Customers book from any phone without installing anything. No commission on
-bookings; a free plan with no time limit.
+**Bookare** ([bookare.app](https://bookare.app)) is online booking software for gyms and studios, salons and other
+appointment businesses, restaurants and small places to stay, with no commission and a free plan. It is built for AI
+assistants: through its MCP server, Claude, ChatGPT or any agent can set up and run a business’s booking system from a
+conversation.
+
+What it covers: classes, packs and a timetable for gyms and studios; appointments for salons and other services; tables for
+restaurants and bars; rooms, pitches and holiday homes for small hotels, campsites and stays. Customers book from any phone
+without installing anything, and the free plan has no time limit.
 
 This repository is the public, machine-readable entry point for developers and AI agents: the OpenAPI description, the
 MCP server details, the setup prompt and format, and working examples. The full documentation lives at
