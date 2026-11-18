@@ -154,6 +154,7 @@ the API); and it keeps working after you hand it over.
 | [`prompts/`](prompts) | The setup prompt in English and Greek |
 | [`examples/`](examples) | `curl` examples for the API and MCP, and BOOKARE SETUP examples |
 | [`assets/logo.png`](assets/logo.png) | The Bookare logo, 400×400 PNG |
+| [`llms-install.md`](llms-install.md) | Install steps for Cline and other MCP clients: remote URL only, nothing to clone or run locally |
 | [`llms-full.txt`](llms-full.txt) | Everything in one file, as served at https://bookare.app/llms-full.txt |
 | [`sync.sh`](sync.sh) | Refreshes `openapi.json` and `llms-full.txt` from the live site |
 
