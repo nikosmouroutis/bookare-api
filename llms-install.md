@@ -38,6 +38,21 @@ For the Cline CLI the file is `~/.cline/data/settings/cline_mcp_settings.json` (
 
 Set `"type": "streamableHttp"` explicitly. If the type is omitted, Cline defaults to legacy SSE, which this server does not use.
 
+The Cline CLI command below saves the same server in this equivalent shape, which is also correct:
+
+```json
+{
+  "mcpServers": {
+    "bookare": {
+      "transport": {
+        "type": "streamableHttp",
+        "url": "https://bookare.app/mcp"
+      }
+    }
+  }
+}
+```
+
 ### Or with the Cline CLI
 
 ```sh
