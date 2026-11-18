@@ -1,3 +1,5 @@
+<img src="assets/logo.png" alt="Bookare logo" width="96" height="96">
+
 # Bookare: API, MCP server and setup for AI agents
 
 **Bookare** ([bookare.app](https://bookare.app)) is online booking software for small businesses: gyms and studios
@@ -19,6 +21,40 @@ MCP server details, the setup prompt and format, and working examples. The full 
 | MCP server (one venue) | `https://<venue>.bookare.app/mcp` (OAuth or API key) |
 | Summary for AI | https://bookare.app/llms.txt · everything: https://bookare.app/llms-full.txt |
 | Company | NM Software · VAT EL159268710 · GEMI 183897703000 · Tositsa 17, 10683 Athens, Greece · hello@bookare.app |
+
+## Install the MCP server
+
+The platform MCP server is remote (Streamable HTTP) at `https://bookare.app/mcp`. It needs **no API key, no headers and no
+sign-in**: an agent creates a draft venue with `create_venue` and passes the returned `address` and `access_key` as
+arguments to the venue tools.
+
+**Claude Code**
+
+```sh
+claude mcp add --transport http bookare 'https://bookare.app/mcp'
+```
+
+**Any client with a JSON config** (Claude Desktop, Cursor, Windsurf, VS Code and others; some clients spell the type
+`streamable-http` or `streamableHttp`)
+
+```json
+{
+  "mcpServers": {
+    "bookare": {
+      "type": "http",
+      "url": "https://bookare.app/mcp"
+    }
+  }
+}
+```
+
+**Cline**: MCP Servers → Remote Servers → name `bookare`, URL `https://bookare.app/mcp`, transport Streamable HTTP; or add
+the same entry to `cline_mcp_settings.json` with `"type": "streamableHttp"`. No API key to fill in.
+
+To run **one existing venue** instead, use `https://<venue>.bookare.app/mcp` the same way: the client signs the venue
+admin in with OAuth on first use (or send `Authorization: Bearer <API key>` from the venue's admin).
+
+Logo for directories and marketplaces: [`assets/logo.png`](assets/logo.png) (400×400 PNG).
 
 ---
 
@@ -117,6 +153,7 @@ the API); and it keeps working after you hand it over.
 | [`mcp/server.json`](mcp/server.json) | The entry published in the official MCP Registry |
 | [`prompts/`](prompts) | The setup prompt in English and Greek |
 | [`examples/`](examples) | `curl` examples for the API and MCP, and BOOKARE SETUP examples |
+| [`assets/logo.png`](assets/logo.png) | The Bookare logo, 400×400 PNG |
 | [`llms-full.txt`](llms-full.txt) | Everything in one file, as served at https://bookare.app/llms-full.txt |
 | [`sync.sh`](sync.sh) | Refreshes `openapi.json` and `llms-full.txt` from the live site |
 
