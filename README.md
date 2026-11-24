@@ -2,6 +2,8 @@
 
 # Bookare: API, MCP server and setup for AI agents
 
+[![Bookare MCP connector](https://glama.ai/mcp/connectors/app.bookare/bookare/badges/score.svg)](https://glama.ai/mcp/connectors/app.bookare/bookare)
+
 **Bookare** ([bookare.app](https://bookare.app)) is online booking software for gyms and studios, salons and other
 appointment businesses, restaurants and small places to stay, with no commission and a free plan. It is built for AI
 assistants: through its MCP server, Claude, ChatGPT or any agent can set up and run a business’s booking system from a
